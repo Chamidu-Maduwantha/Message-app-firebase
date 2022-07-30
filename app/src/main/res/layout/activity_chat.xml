@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C64A4A"
+        android:theme="?attr/actionBarTheme"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageview"
+
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_backspace"
+                app:tint="@color/white" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/userpic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Name "
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold|normal" />
+
+                <TextView
+                    android:id="@+id/states"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold|normal"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/lenear01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+
+        android:orientation="vertical"
+
+
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dests"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear02"
+        android:layout_above="@+id/lenear01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_shape"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="2"
+            android:padding="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/massagebox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+
+                        android:gravity="start"
+                        android:hint="Enter chat"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="1dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:padding="9dp"
+                    android:src="@drawable/ic_attachment"
+                    app:tint="#2E2E2E" />
+
+
+                <ImageView
+                    android:id="@+id/camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:padding="9dp"
+                    android:src="@drawable/ic_camera"
+                    app:tint="#2E2E2E" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="9dp"
+            android:layout_weight="3"
+            android:background="@drawable/edt_send_backgrnd"
+            android:padding="12dp"
+            android:src="@drawable/send"
+            app:tint="@color/white" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

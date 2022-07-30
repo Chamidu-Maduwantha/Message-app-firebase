@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSettings">
+    <LinearLayout
+        android:id="@+id/lino1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="User Settings"
+            android:gravity="center"
+            android:textSize="35sp"
+
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/lino1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/darker_gray"
+
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pro"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/userpic" />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gmail : "
+                android:textSize="18sp"
+                android:layout_marginBottom="17dp"/>
+
+            <TextView
+                android:id="@+id/gmli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gmail here"
+                android:textSize="18sp"
+                android:layout_marginBottom="17dp"/>
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username : "
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:id="@+id/uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio : "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/biol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="25dp"
+                />
+
+
+
+
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete the account"
+            android:background="@color/red"
+            android:textAlignment="center"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_item_botom"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/cam"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/cam_icon"
+            android:layout_marginRight="45dp"
+            />
+
+        <Button
+            android:id="@+id/chat1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/chat_icon"
+            android:layout_marginRight="45dp"
+            />
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/settings_icon"
+            android:layout_marginRight="45dp"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/logout_icon"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

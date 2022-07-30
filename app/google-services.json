@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "711093232161",
+    "firebase_url": "https://chatcom2-35b08-default-rtdb.firebaseio.com",
+    "project_id": "chatcom2-35b08",
+    "storage_bucket": "chatcom2-35b08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711093232161:android:b89c33aab7752be0aaf960",
+        "android_client_info": {
+          "package_name": "com.example.chatcom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711093232161-20rfj404um2ogkk7j171s8jb3huka152.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOQKk-6nYj5E0uszqLUGnFZHSfFnrhRw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711093232161-20rfj404um2ogkk7j171s8jb3huka152.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

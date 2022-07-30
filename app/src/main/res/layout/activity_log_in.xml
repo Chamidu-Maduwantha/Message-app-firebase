@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="@drawable/login_bg">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+
+        />
+
+
+    <LinearLayout
+
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/login_background"
+
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gmail"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:background="@drawable/edt_log_background"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+
+
+            />
+
+        <EditText
+            android:id="@+id/lgpassowrd"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:background="@drawable/edt_log_background"
+            android:layout_marginTop="15dp"
+
+            />
+
+
+
+        <Button
+            android:id="@+id/btnlg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/edt_log_background"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:orientation="horizontal"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Dont have a acoount ? "
+
+               />
+
+           <Button
+               android:id="@+id/btnreg"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Register"
+               android:background="@drawable/reg_button_background"
+               android:layout_marginBottom="10dp"
+
+               />
+
+
+
+       </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+</ScrollView>
